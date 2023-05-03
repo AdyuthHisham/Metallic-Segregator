@@ -40,7 +40,7 @@ s3_midPos = 100
 ##Final poisiton for placement of object
 s1_finPos = 55
 s2_finPos = []
-#s2_finP	os = [93,121,149]
+#s2_finPos = [93,121,149]
 s3_finPos = 100
 
 ##For data transfer
@@ -155,7 +155,7 @@ def finPos(msg):
     inPos()
     time.sleep(2)
     print("Picking up object")
-    s2Servo.servo_Angle(s2_finPos[msg])
+    s2Servo.servo_Angle(s2_finPos)
     time.sleep(2)
     s1Servo.servo_Angle(s1_finPos)
     time.sleep(2)
